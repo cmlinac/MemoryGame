@@ -1,3 +1,9 @@
+.container {
+  background-color:  #a7d723;
+  color: #FFFFFF;
+  margin: 20px auto;
+  font-weight: bold;
+}
 
 .game-board {
   display: flex;

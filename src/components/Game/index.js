@@ -10,7 +10,9 @@ class Game extends React.Component {
     super(props);
     this.state = {
       pictures: this.initializePictures(),
-      score: 0
+      highScore: 0,
+      score: 0,
+      message: "Click a picture to begin."
     };
   }
 
@@ -26,24 +28,37 @@ class Game extends React.Component {
     console.log(i);
     // check if picture was already clicked
     const pictures = this.state.pictures;
-    // if it is, user loses
+    let message;
+
+    // if it was, user loses
     if (pictures[i].isClicked) {
       alert("Lost");
+      message = `You already clicked ${pictures[i].name}, try again!`;
+      this.setState({message});
       this.restartGame();
+
     } else {
       // if it isn't, increase their score
       const score = this.state.score + 1;
+
       // if their score is equal to the number of pictures, they win
       if (score === pictures.length) {
         alert("Win");
+        message = "Congratulations, you won!";
+        this.setState({message});
         this.restartGame();
+
       } else {
         // increase their score, shuffle the array and save the new state
         pictures[i].isClicked = true;
         this.shuffle(pictures);
+        message = "You guessed correctly!";
         this.setState({
           pictures: pictures,
-          score: score
+          score: score,
+          // if new score > highScore, update highScore
+          highScore: score > this.state.highScore ? score : this.state.highScore,
+          message: message
         });
       }
     }
@@ -51,15 +66,13 @@ class Game extends React.Component {
 
   render() {
     return (
-      // header (score, right/wrong)
-      <div className="container">
-        <Header score={this.state.score} />
+      <div className="container text-center">
+        <Header score={this.state.score} highScore={this.state.highScore}>{this.state.message}</Header>
         <div className="game-board">
           {this.state.pictures.map((pic, idx) => <Picture src={pic.src} name={pic.name} value={idx} key={pic.name} onClick={() => this.handleClick(idx)}/>)}
         </div>
-        <Footer/>
+        <Footer>Can you click on all 9 pictures without clicking one twice?</Footer>
       </div>
-      // footer
     );
   }
 
