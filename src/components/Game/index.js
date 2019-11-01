@@ -6,6 +6,7 @@ import Header from "../Header";
 import Footer from "../Footer";
 import Logo from '../Logo';
 
+// the main component, keeps track of game state and renders most components
 class Game extends React.Component {
   constructor(props) {
     super(props);
@@ -17,7 +18,7 @@ class Game extends React.Component {
     };
   }
 
-  // add isClicked = false to each picture so it doesn't have to be in the JSON
+  // load stored pictures and add isClicked = false to each picture 
   initializePictures() {
     const pictures = originalPictures;
     pictures.forEach(element => element.isClicked = false);
@@ -25,30 +26,32 @@ class Game extends React.Component {
     return pictures;
   }
 
+  // Game Logic
   handleClick = (i) => {
     console.log(i);
     // check if picture was already clicked
     const pictures = this.state.pictures;
     let message;
 
-    // if it was, user loses
+    // if it was clicked, user loses and game restarts
     if (pictures[i].isClicked) {
       message = `You already clicked ${pictures[i].name}, c'mon son!`;
       this.setState({message});
       this.restartGame();
 
     } else {
-      // if it isn't, increase their score
+      // if it isn't, increase their score 
       const score = this.state.score + 1;
 
-      // if their score is equal to the number of pictures, they win
+      // if the user's score is equal to the number of pictures, they win and the game restarts
       if (score === pictures.length) {
         message = "You won! I hear that.";
         this.setState({message});
         this.restartGame();
 
       } else {
-        // increase their score, shuffle the array and save the new state
+        // keep the game running
+        // increase the user's score, shuffle the array and save the current state
         pictures[i].isClicked = true;
         this.shuffle(pictures);
         message = "You know that's right! Keep going.";
@@ -78,6 +81,7 @@ class Game extends React.Component {
     );
   }
 
+  // shuffles the given array
   shuffle(pictures) {
     for (let i = pictures.length - 1; i >= 0; i--) {
       let j = Math.floor(Math.random() * (i + 1));
