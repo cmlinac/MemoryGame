@@ -78,11 +78,6 @@ class Game extends React.Component {
     );
   }
 
-  renderPictures = () => {
-    const pictures = this.state.pictures;
-    return pictures.map((pic, idx) => <Picture src={pic.src} name={pic.name} value={idx} key={pic.name} onClick={this.handleClick}/>);
-  }
-
   shuffle(pictures) {
     for (let i = pictures.length - 1; i >= 0; i--) {
       let j = Math.floor(Math.random() * (i + 1));
