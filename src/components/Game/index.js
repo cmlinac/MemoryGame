@@ -13,7 +13,7 @@ class Game extends React.Component {
       pictures: this.initializePictures(),
       highScore: 0,
       score: 0,
-      message: "Can you click all 9 pictures without clicking one twice?"
+      message: "Can you click on all 9 characters without clicking one twice?"
     };
   }
 
@@ -67,7 +67,7 @@ class Game extends React.Component {
     return (
       <div>
         <Logo/>
-        <div className="container text-center">
+        <div className="container rounded text-center">
           <Header score={this.state.score} highScore={this.state.highScore}>{this.state.message}</Header>
           <div className="game-board">
             {this.state.pictures.map((pic, idx) => <Picture src={pic.src} name={pic.name} value={idx} key={pic.name} onClick={() => this.handleClick(idx)}/>)}
