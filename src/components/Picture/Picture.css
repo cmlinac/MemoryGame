@@ -1,8 +1,13 @@
 .game-picture { 
   width: 200px;
   margin: 10px;
+  transition: transform .2s;
   border: 2px solid white;
   box-shadow: 4px 4px 4px rgba(0, 0, 0, .5);
+}
+
+.game-picture:hover {
+  transform: scale(1.1);
 }
 
 @media only screen and (max-width: 420px) {
