@@ -4,6 +4,7 @@ import './Game.css';
 import originalPictures from '../../pictures.json';
 import Header from "../Header";
 import Footer from "../Footer";
+import Logo from '../Logo';
 
 class Game extends React.Component {
   constructor(props) {
@@ -12,7 +13,7 @@ class Game extends React.Component {
       pictures: this.initializePictures(),
       highScore: 0,
       score: 0,
-      message: "Click a picture to begin."
+      message: "Can you click all 9 pictures without clicking one twice?"
     };
   }
 
@@ -32,8 +33,7 @@ class Game extends React.Component {
 
     // if it was, user loses
     if (pictures[i].isClicked) {
-      alert("Lost");
-      message = `You already clicked ${pictures[i].name}, try again!`;
+      message = `You already clicked ${pictures[i].name}, c'mon son!`;
       this.setState({message});
       this.restartGame();
 
@@ -43,8 +43,7 @@ class Game extends React.Component {
 
       // if their score is equal to the number of pictures, they win
       if (score === pictures.length) {
-        alert("Win");
-        message = "Congratulations, you won!";
+        message = "You won! I hear that.";
         this.setState({message});
         this.restartGame();
 
@@ -52,7 +51,7 @@ class Game extends React.Component {
         // increase their score, shuffle the array and save the new state
         pictures[i].isClicked = true;
         this.shuffle(pictures);
-        message = "You guessed correctly!";
+        message = "You know that's right! Keep going.";
         this.setState({
           pictures: pictures,
           score: score,
@@ -66,12 +65,15 @@ class Game extends React.Component {
 
   render() {
     return (
-      <div className="container text-center">
-        <Header score={this.state.score} highScore={this.state.highScore}>{this.state.message}</Header>
-        <div className="game-board">
-          {this.state.pictures.map((pic, idx) => <Picture src={pic.src} name={pic.name} value={idx} key={pic.name} onClick={() => this.handleClick(idx)}/>)}
+      <div>
+        <Logo/>
+        <div className="container text-center">
+          <Header score={this.state.score} highScore={this.state.highScore}>{this.state.message}</Header>
+          <div className="game-board">
+            {this.state.pictures.map((pic, idx) => <Picture src={pic.src} name={pic.name} value={idx} key={pic.name} onClick={() => this.handleClick(idx)}/>)}
+          </div>
+          <Footer><span role="img" aria-label="pineapple">🍍</span></Footer>
         </div>
-        <Footer>Can you click on all 9 pictures without clicking one twice?</Footer>
       </div>
     );
   }
