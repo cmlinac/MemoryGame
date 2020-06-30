@@ -1,11 +1,11 @@
-# MemoryGame
+# Psych!
 
-## What is MemoryGame?
-MemoryGame is an interactive game that tests your memory. Click on each character exactly once to win. Be careful, they shuffle on every click.
+## What is Psych?
+Psych is an interactive memory game built with React. You must click on each character exactly once to win. It won't be easy, they shuffle on every click.
 
 ## Live Site
 
-Check out a version deployed online [here](https://cmlinac.github.io/MemoryGame/).
+Check out a version deployed online [here](https://cmlinac.github.io/Psych/).
 
 ## Running Locally
 
