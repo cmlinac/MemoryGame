@@ -11,8 +11,8 @@ Check out a version deployed online [here](https://cmlinac.github.io/Psych/).
 
 Run these commands in the terminal in a directory of your choice:
   
-    git clone git@github.com:cmlinac/MemoryGame.git
-    cd MemoryGame
+    git clone git@github.com:cmlinac/Psych.git
+    cd Psych
     npm install
     npm start
 
