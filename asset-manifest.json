@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/MemoryGame/static/css/main.1ee39224.chunk.css",
-    "main.js": "/MemoryGame/static/js/main.67ff98fa.chunk.js",
-    "main.js.map": "/MemoryGame/static/js/main.67ff98fa.chunk.js.map",
-    "runtime-main.js": "/MemoryGame/static/js/runtime-main.8e7f7c57.js",
-    "runtime-main.js.map": "/MemoryGame/static/js/runtime-main.8e7f7c57.js.map",
-    "static/js/2.e2190cac.chunk.js": "/MemoryGame/static/js/2.e2190cac.chunk.js",
-    "static/js/2.e2190cac.chunk.js.map": "/MemoryGame/static/js/2.e2190cac.chunk.js.map",
-    "index.html": "/MemoryGame/index.html",
-    "precache-manifest.05e5d10a0b5360a32d1a161bed5d1bc1.js": "/MemoryGame/precache-manifest.05e5d10a0b5360a32d1a161bed5d1bc1.js",
-    "service-worker.js": "/MemoryGame/service-worker.js",
-    "static/css/main.1ee39224.chunk.css.map": "/MemoryGame/static/css/main.1ee39224.chunk.css.map"
+    "main.css": "/Psych/static/css/main.1ee39224.chunk.css",
+    "main.js": "/Psych/static/js/main.4891105c.chunk.js",
+    "main.js.map": "/Psych/static/js/main.4891105c.chunk.js.map",
+    "runtime-main.js": "/Psych/static/js/runtime-main.425c8e2b.js",
+    "runtime-main.js.map": "/Psych/static/js/runtime-main.425c8e2b.js.map",
+    "static/js/2.e2190cac.chunk.js": "/Psych/static/js/2.e2190cac.chunk.js",
+    "static/js/2.e2190cac.chunk.js.map": "/Psych/static/js/2.e2190cac.chunk.js.map",
+    "index.html": "/Psych/index.html",
+    "precache-manifest.ec47d1116f1d988c271af7ce88242c66.js": "/Psych/precache-manifest.ec47d1116f1d988c271af7ce88242c66.js",
+    "service-worker.js": "/Psych/service-worker.js",
+    "static/css/main.1ee39224.chunk.css.map": "/Psych/static/css/main.1ee39224.chunk.css.map"
   },
   "entrypoints": [
-    "static/js/runtime-main.8e7f7c57.js",
+    "static/js/runtime-main.425c8e2b.js",
     "static/js/2.e2190cac.chunk.js",
     "static/css/main.1ee39224.chunk.css",
-    "static/js/main.67ff98fa.chunk.js"
+    "static/js/main.4891105c.chunk.js"
   ]
 }
