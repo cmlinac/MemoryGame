@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/MemoryGame/static/css/main.ed815402.chunk.css",
-    "main.js": "/MemoryGame/static/js/main.12f88054.chunk.js",
-    "main.js.map": "/MemoryGame/static/js/main.12f88054.chunk.js.map",
-    "runtime-main.js": "/MemoryGame/static/js/runtime-main.cf76606b.js",
-    "runtime-main.js.map": "/MemoryGame/static/js/runtime-main.cf76606b.js.map",
-    "static/js/2.4f20b97c.chunk.js": "/MemoryGame/static/js/2.4f20b97c.chunk.js",
-    "static/js/2.4f20b97c.chunk.js.map": "/MemoryGame/static/js/2.4f20b97c.chunk.js.map",
+    "main.css": "/MemoryGame/static/css/main.1ee39224.chunk.css",
+    "main.js": "/MemoryGame/static/js/main.67ff98fa.chunk.js",
+    "main.js.map": "/MemoryGame/static/js/main.67ff98fa.chunk.js.map",
+    "runtime-main.js": "/MemoryGame/static/js/runtime-main.8e7f7c57.js",
+    "runtime-main.js.map": "/MemoryGame/static/js/runtime-main.8e7f7c57.js.map",
+    "static/js/2.e2190cac.chunk.js": "/MemoryGame/static/js/2.e2190cac.chunk.js",
+    "static/js/2.e2190cac.chunk.js.map": "/MemoryGame/static/js/2.e2190cac.chunk.js.map",
     "index.html": "/MemoryGame/index.html",
-    "precache-manifest.ac5c58bb4de2462db0ed567606658c4c.js": "/MemoryGame/precache-manifest.ac5c58bb4de2462db0ed567606658c4c.js",
+    "precache-manifest.05e5d10a0b5360a32d1a161bed5d1bc1.js": "/MemoryGame/precache-manifest.05e5d10a0b5360a32d1a161bed5d1bc1.js",
     "service-worker.js": "/MemoryGame/service-worker.js",
-    "static/css/main.ed815402.chunk.css.map": "/MemoryGame/static/css/main.ed815402.chunk.css.map"
+    "static/css/main.1ee39224.chunk.css.map": "/MemoryGame/static/css/main.1ee39224.chunk.css.map"
   },
   "entrypoints": [
-    "static/js/runtime-main.cf76606b.js",
-    "static/js/2.4f20b97c.chunk.js",
-    "static/css/main.ed815402.chunk.css",
-    "static/js/main.12f88054.chunk.js"
+    "static/js/runtime-main.8e7f7c57.js",
+    "static/js/2.e2190cac.chunk.js",
+    "static/css/main.1ee39224.chunk.css",
+    "static/js/main.67ff98fa.chunk.js"
   ]
 }
