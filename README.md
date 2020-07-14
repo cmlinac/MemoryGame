@@ -5,13 +5,13 @@ Psych is an interactive memory game built with React. You must click on each cha
 
 ## Live Site
 
-Check out a version deployed online [here](https://cmlinac.github.io/Psych/).
+Check out a version deployed online [here](https://ichbindeveloper.github.io/Psych/).
 
 ## Running Locally
 
 Run these commands in the terminal in a directory of your choice:
   
-    git clone git@github.com:cmlinac/Psych.git
+    git clone git@github.com:ichbindeveloper/Psych.git
     cd Psych
     npm install
     npm start
